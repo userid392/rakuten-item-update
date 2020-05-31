@@ -9,6 +9,7 @@ import tkinter as tk
 from tkinter import ttk
 
 import threading
+import time
 from rmslogin import RakutenRms
 
 
@@ -237,6 +238,8 @@ class MainWindow:
                             self.rms.config.settings[k]["value"] = self.entries[k].get()
 
                     self.rms.update(item.find("itemUrl").text)
+            
+            time.sleep(0.5)
             
         self.update_button["state"] = tk.NORMAL
 
