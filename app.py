@@ -214,6 +214,7 @@ class MainWindow:
         self.update_button["state"] = tk.DISABLED
 
     def __update_rms_items(self):
+        self.update_flag = True
         for item in self.items:
             if not self.update_flag:
                 break
@@ -238,6 +239,9 @@ class MainWindow:
                     self.rms.update(item.find("itemUrl").text)
             
         self.update_button["state"] = tk.NORMAL
+
+    def cancel_updates(self):
+        self.update_flag = False
 
     def __item_name(self, toggle=False):
 
@@ -1128,7 +1132,7 @@ class MainWindow:
         self.update_button.place(relx=0.664, rely=0.934, height=44, width=137)
         self.update_button.configure(text='''更新''')
 
-        self.cancel_button = tk.Button(self.Frame1)
+        self.cancel_button = tk.Button(self.Frame1, command=self.cancel_updates)
         self.cancel_button.place(relx=0.844, rely=0.934, height=44, width=127)
         self.cancel_button.configure(text='''停止''')
 

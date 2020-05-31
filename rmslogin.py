@@ -209,9 +209,9 @@ class RakutenRms:
 
     def checkbox(self, name: str, check: str):
         element = self.driver.find_element_by_name(name)
-        if element.is_selected and check == "0":
+        if element.is_selected and not check:
             element.click()
-        elif not element.is_selected and check == "1":
+        elif not element.is_selected and check:
             element.click()
 
     def radio(self, name: str, value: str):
