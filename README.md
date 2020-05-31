@@ -24,7 +24,7 @@ Chromeをインストールする。
 
 ### ChromeDriverをダウンロードする。
 ChromeのバージョンにあったChromeDriverをダウンロードする。
-ダウンロードしたchromedriver.exeをrakuten-item-updateフォルダ内に置く。
+ダウンロードしたchromedriver.exeをapp.exeと同じフォルダ内に置く。
 
 - [ChromeDriver](https://chromedriver.chromium.org/downloads)
 - [バージョンの確認の仕方](https://mhtdesign.net/guide/version-confirmation.html)
