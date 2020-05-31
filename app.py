@@ -180,6 +180,7 @@ class MainWindow:
         self.__smart_caption()
         self.__display_caption()
         self.__depot_flag()
+        self.__limited_flag()
         self.__item_box()
         self.__item_updates()
 
@@ -1065,6 +1066,40 @@ class MainWindow:
 
         self.toggles["depot_flag"] = self.depot_flag_toggle_var
         self.entries["depot_flag"] = self.depot_flag_var
+
+    def __limited_flag(self, toggle=False):
+        self.Frame2_6 = tk.Frame(self.Frame1)
+        self.Frame2_6.place(
+            relx=0.0,
+            rely=0.913,
+            relheight=0.053,
+            relwidth=0.649)
+        self.Frame2_6.configure(relief='groove')
+        self.Frame2_6.configure(borderwidth="2")
+        self.Frame2_6.configure(relief="groove")
+
+        self.Label1_7 = tk.Label(self.Frame2_6)
+        self.Label1_7.place(relx=0.069, rely=0.109, height=37, width=83)
+        self.Label1_7.configure(text='''サーチ非表示''')
+        self.Label1_7.configure(wraplength="50")
+
+        self.limited_flag_toggle_var = tk.BooleanVar()
+        self.limited_flag_toggle_var.set(toggle)
+        self.limited_flag_toggle = tk.Checkbutton(self.Frame2_6, variable=self.limited_flag_toggle_var)
+        self.limited_flag_toggle.place(
+            relx=0.029,
+            rely=0.304,
+            relheight=0.413,
+            relwidth=0.071)
+
+        self.limited_flag_checkbtn_var = tk.BooleanVar()
+        self.limited_flag_checkbtn = tk.Checkbutton(self.Frame2_6, variable=self.limited_flag_checkbtn_var)
+        self.limited_flag_checkbtn.place(
+            relx=0.277, rely=0.217, relheight=0.522, relwidth=0.277)
+        self.limited_flag_checkbtn.configure(text='''サーチ非表示にする''')
+
+        self.toggles["limited_flag"] = self.limited_flag_toggle_var
+        self.entries["limited_flag"] = self.limited_flag_checkbtn_var
 
     def __item_box(self):
         self.result_box_var = tk.StringVar()
