@@ -28,7 +28,7 @@ class RakutenRms:
         options.add_argument("--ignore-certificate-errors")
         options.add_argument("--disable-desktop-notifications")
         options.add_argument("--disable-extensions")
-        current_dir = os.getcwd()
+        current_dir = os.path.dirname(os.path.abspath(__file__))
         self.driver = webdriver.Chrome(
             current_dir + "/chromedriver.exe",
             options=options)
