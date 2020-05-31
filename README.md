@@ -15,8 +15,8 @@
 
 serviceSecret, licenseKeyはAPI利用に必要。また、API利用申請をする必要がある。
 
-[Rakuten RMS WEB SERVICE](https://webservice.rms.rakuten.co.jp/merchant-portal/configurationApi)
-[API利用申請方法](http://wasab.net/howto/worldswitch/setting/rakuten_api-2/)
+- [Rakuten RMS WEB SERVICE](https://webservice.rms.rakuten.co.jp/merchant-portal/configurationApi)
+- [API利用申請方法](http://wasab.net/howto/worldswitch/setting/rakuten_api-2/)
 
 ### Chromeをインストールする。
 Chromeをインストールする。
