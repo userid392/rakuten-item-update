@@ -12,7 +12,6 @@ import time
 import requests
 import xml.etree.ElementTree as ET
 import math
-import os
 
 
 class RakutenRms:
@@ -28,9 +27,8 @@ class RakutenRms:
         options.add_argument("--ignore-certificate-errors")
         options.add_argument("--disable-desktop-notifications")
         options.add_argument("--disable-extensions")
-        current_dir = os.path.dirname(os.path.abspath(__file__))
         self.driver = webdriver.Chrome(
-            current_dir + "/chromedriver.exe",
+            "chromedriver.exe",
             options=options)
 
         self.timeout = self.config.timeout
