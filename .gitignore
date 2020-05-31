@@ -1,0 +1,7 @@
+__pycache__
+.vscode
+chromedriver.exe
+dist
+build
+*.spec
+*.zip
