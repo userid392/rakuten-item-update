@@ -207,11 +207,10 @@ class RakutenRms:
         select_element = Select(element)
         select_element.select_by_value(select_number)
 
-    def checkbox(self, name: str, check: str):
+    def checkbox(self, name: str, check: bool):
         element = self.driver.find_element_by_name(name)
-        if element.is_selected and not check:
-            element.click()
-        elif not element.is_selected and check:
+        print(check, element.is_selected())
+        if element.is_selected() != check:
             element.click()
 
     def radio(self, name: str, value: str):
@@ -255,4 +254,5 @@ class RakutenRms:
                     item['insert'],
                     item['replace'])
 
+        time.sleep(0.5)
         self.driver.find_element_by_id("submitButton").click()
