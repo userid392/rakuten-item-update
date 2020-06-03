@@ -239,8 +239,6 @@ class MainWindow:
 
                     self.rms.update(item.find("itemUrl").text)
             
-            time.sleep(0.5)
-            
         self.update_button["state"] = tk.NORMAL
 
     def cancel_updates(self):
