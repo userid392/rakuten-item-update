@@ -2,7 +2,7 @@
 楽天商品編集ソフト
 
 ## ダウンロード
-[rakuten-item-update v0.02](https://github.com/userid392/rakuten-item-update/releases/download/v0.0.2/rakuten-item-update.zip)
+[rakuten-item-update v0.02](https://github.com/userid392/rakuten-item-update/releases/download/v0.0.3/rakuten-item-update.zip)
 
 ## 使用前の準備
 ### config.iniを開き以下の項目を設定する。
