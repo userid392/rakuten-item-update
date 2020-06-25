@@ -390,7 +390,7 @@
         }
     },
     "sale_etime_year": {
-        "attr_name": "sale_stime_year",
+        "attr_name": "sale_etime_year",
         "type": "select",
         "options": {
             "-": "▼",
@@ -402,7 +402,7 @@
         }
     },
     "sale_etime_month": {
-        "attr_name": "sale_stime_month",
+        "attr_name": "sale_etime_month",
         "type": "select",
         "options": {
             "-": "▼",
@@ -421,7 +421,7 @@
         }
     },
     "sale_etime_day": {
-        "attr_name": "sale_stime_day",
+        "attr_name": "sale_etime_day",
         "type": "select",
         "options": {
             "-": "▼",
@@ -459,7 +459,7 @@
         }
     },
     "sale_etime_hour": {
-        "attr_name": "sale_stime_hour",
+        "attr_name": "sale_etime_hour",
         "type": "select",
         "options": {
             "-": "▼",
@@ -490,7 +490,7 @@
         }
     },
     "sale_etime_min": {
-        "attr_name": "sale_stime_min",
+        "attr_name": "sale_etime_min",
         "type": "select",
         "options": {
             "-": "▼",
